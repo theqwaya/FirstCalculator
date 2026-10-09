@@ -1,0 +1,31 @@
+while True:
+    kapat=input("Çikmak için 'q' tuşuna basin, devam etmek için herhangi bir tuşa basin: ")
+    if kapat=='q':
+        print("Program kapatiliyor...")
+        break
+    x=int(input("Bir sayi giriniz: "))
+    y=int(input("Başka bir sayi giriniz: "))
+
+    işlem=input("Hangi işlemi yapmak istiyorsunuz?(+,-,*,/): ")
+
+    if işlem=="+":
+        print("Toplam: ", x+y)
+
+    elif işlem=="-":
+        print("Fark: ", x-y)
+
+    elif işlem=="*":
+        print("Çarpim: ", x*y)
+
+    elif işlem=="/":
+        if y==0:
+            print("Bir sayi 0'a bölünemez.")
+        else:
+            print("Bölüm: ", x/y)
+        if x%y!=0:
+            print("Kalan: ", x%y)
+
+    else:
+        print("Geçersiz işlem.")
+
+    
